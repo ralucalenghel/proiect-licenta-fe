@@ -1,0 +1,32 @@
+.body {
+  padding: 30px;
+  max-height: 895px;
+  overscroll-behavior-y: contain;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.serviceName {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+thead {
+  position: sticky !important;
+  top: 50px;
+}
+
+tr {
+  height: 50px;
+  .List {
+    margin: 10px auto;
+  }
+
+  .Attribute {
+    display: inline;
+    margin-left: 5px;
+  }
+}

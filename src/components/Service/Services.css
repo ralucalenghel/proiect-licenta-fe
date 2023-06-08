@@ -1,0 +1,30 @@
+.body {
+  padding: 14px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  table-layout: auto;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: solid 1px #333;
+  text-align: center;
+  border-inline: none;
+}
+
+thead {
+  background: #333;
+  color: white;
+}
+/*# sourceMappingURL=Services.css.map */
