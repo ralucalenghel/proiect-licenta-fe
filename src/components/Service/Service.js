@@ -72,7 +72,7 @@ class CurentService extends Component {
     return (
       <Card>
         <Card.Body>
-          Service {this.props.name} {this.props.id}{" "}
+          Service {this.props.name}{" "}
           <span className="ms-3" style={{ color: color }}>
             {this.props.noCars}
           </span>

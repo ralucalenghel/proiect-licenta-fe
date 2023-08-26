@@ -39,7 +39,7 @@ class CarModal extends Component {
       this.setState({ valid: updatedValid });
       this.checkValidity();
     });
-  }
+  } 
 
   onModelChange(e) {
     const updatedField = updateObject(this.state.fields, {
@@ -211,13 +211,6 @@ class CarModal extends Component {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button
-            onClick={() =>
-              console.log(this.state.formValidity, this.state.valid)
-            }
-          >
-            valid?
-          </Button>
           <Button
             variant="primary"
             disabled={this.state.formValidity ? false : true}

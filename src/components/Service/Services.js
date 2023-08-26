@@ -74,6 +74,11 @@ class Services extends Component {
       );
     });
 
+    // const sortList = (field) =>{
+    //   return list.sort
+    // }
+
+//sort
     return (
       <div className="body">
         <Table striped bordered hover variant="dark">

@@ -6,6 +6,7 @@ import "./Toolbar.scss";
 
 class toolbar extends Component {
   render() {
+    const isAuth = this.props.isAuth?this.props.isAuth:null
     const customHref =
       this.props.service != null ? "/service/" + this.props.service.id : "";
     return (
@@ -29,6 +30,14 @@ class toolbar extends Component {
               </Nav.Link>
             )}
           </Nav.Item>
+          <Nav.Item>
+            {
+              isAuth && 
+              <Nav.Link href="/login" onClick={()=>{localStorage.removeItem('loggedIn')}}>Logout</Nav.Link>
+            }
+          </Nav.Item>
+
+
         </Nav>
       </Nav>
     );

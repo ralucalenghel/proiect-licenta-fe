@@ -18,10 +18,10 @@ import { BrowserRouter } from "react-router-dom";
 export const serviceUrl = "http://localhost:8080/api/";
 export const operationsUrl = "http://localhost:8080/api/";
 
-const composeEnhancers =
-  process.env.NODE_ENV === "development"
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    : null || compose;
+// const composeEnhancers =
+//   process.env.NODE_ENV === "development"
+//     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+//     : null || compose;
 
 const rootReducer = combineReducers({
   services: servicesReducer,
@@ -33,7 +33,7 @@ const rootReducer = combineReducers({
 
 const store = createStore(
   rootReducer,
-  composeEnhancers(applyMiddleware(thunk))
+  applyMiddleware(thunk)
 );
 
 const app = (
